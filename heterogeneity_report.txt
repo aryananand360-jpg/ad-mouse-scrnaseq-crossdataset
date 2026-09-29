@@ -1,4 +1,0 @@
-
-## Within-Dataset Heterogeneity
-
-Additionally, only 10 of 37 curated samples for GSE143758 are represented in the loaded hippocampus-restricted subset; results for this dataset should be interpreted as specific to this anatomical/temporal subset rather than the full original experiment.
