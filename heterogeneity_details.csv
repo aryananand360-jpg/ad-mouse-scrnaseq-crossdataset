@@ -1,0 +1,3 @@
+Dataset,Heterogeneity_Type,Recommendation
+GSE214244,None detected,Note in Methods 2.1 and Limitations; consider region × condition interaction if significant
+GSE143758,None detected,Note in Methods 2.1 and Limitations; protocol and timepoint effects may contribute to signal

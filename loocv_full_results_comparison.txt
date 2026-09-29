@@ -1,0 +1,57 @@
+LEAVE-ONE-DATASET-OUT ROBUSTNESS ANALYSIS REPORT
+
+FULL ANALYSIS (reference):
+  Significant genes: 124 (FDR < 0.05)
+  Upregulated: 2
+  Downregulated: 122
+
+  n_genes_tested n_significant n_upregulated n_downregulated
+1          19302            70             0              70
+2          19498             6             0               6
+3          19934           124             2             122
+4          18735            53             1              52
+5          18934           271            21             250
+                                                      top10_genes
+1    Ccl3|Itgax|Plaur|Ccl4|Bcl2a1b|Gpr65|Atf3|Ptprc|Asb10|Gm26714
+2      Ccl3|Itgax|Plaur|Pdcd1|Ccl4|Atf3|Cst7|Fcgr2b|Ptprc|Gm26714
+3      Ccl3|Itgax|Hcar2|Plaur|Bcl2a1b|Ccl4|Atf3|Gpr65|Asb10|Pdcd1
+4    Ccl3|Itgax|Cst7|Hcar2|Plaur|Gpr65|Lilrb4a|Bcl2a1b|Pdcd1|Atf3
+5 Ccl3|Itgax|Lilrb4a|Ly9|Gm26714|Bcl2a1b|Plaur|Tnfsf8|C4b|Bcl2a1a
+             run dropped_dataset
+1 Drop_GSE140399       GSE140399
+2 Drop_GSE140510       GSE140510
+3 Drop_GSE143758       GSE143758
+4 Drop_GSE208683       GSE208683
+5 Drop_GSE214244       GSE214244
+
+CONSISTENCY ACROSS RUNS:
+  dropped_dataset n_sig_in_run overlap_with_full pct_top_genes_retained
+1       GSE140399           70                29               96.66667
+2       GSE140510            6                 6               20.00000
+3       GSE143758          124                30              100.00000
+4       GSE208683           53                30              100.00000
+5       GSE214244          271                28               93.33333
+
+TOP 10 GENES PERSISTENCE:
+      gene      GSE140399      GSE140510     GSE143758     GSE208683
+1     Ccl3   Yes (rank 1)   Yes (rank 1)  Yes (rank 1)  Yes (rank 1)
+2    Itgax   Yes (rank 2)   Yes (rank 2)  Yes (rank 2)  Yes (rank 2)
+3    Hcar2 No (rank \024) No (rank \024)  Yes (rank 3)  Yes (rank 4)
+4    Plaur   Yes (rank 3)   Yes (rank 3)  Yes (rank 4)  Yes (rank 5)
+5  Bcl2a1b   Yes (rank 5) No (rank \024)  Yes (rank 5)  Yes (rank 8)
+6     Ccl4   Yes (rank 4)   Yes (rank 5)  Yes (rank 6) Yes (rank 11)
+7     Atf3   Yes (rank 7)   Yes (rank 6)  Yes (rank 7) Yes (rank 10)
+8    Gpr65   Yes (rank 6) No (rank \024)  Yes (rank 8)  Yes (rank 6)
+9    Asb10   Yes (rank 9) No (rank \024)  Yes (rank 9) Yes (rank 12)
+10   Pdcd1  Yes (rank 16)   Yes (rank 4) Yes (rank 10)  Yes (rank 9)
+       GSE214244
+1   Yes (rank 1)
+2   Yes (rank 2)
+3  Yes (rank 22)
+4   Yes (rank 7)
+5   Yes (rank 6)
+6  Yes (rank 16)
+7  Yes (rank 18)
+8  Yes (rank 60)
+9  Yes (rank 13)
+10 Yes (rank 25)
