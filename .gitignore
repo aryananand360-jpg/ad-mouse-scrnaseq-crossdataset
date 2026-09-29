@@ -1,0 +1,16 @@
+# Large files
+*.h5ad
+*.h5
+*.tar.gz
+*.zip
+
+# System
+.DS_Store
+__pycache__/
+*.pyc
+.Rhistory
+
+# Temporary
+.ipynb_checkpoints/
+*~
+*.swp
